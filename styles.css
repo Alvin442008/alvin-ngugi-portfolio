@@ -1,0 +1,27 @@
+*{margin: 0;padding: 0;box-sizing:border-box}
+body{font-family:Arial, sans-serif;line-height:1.6;background-color:black;color:white;}
+nav{background-color:black;padding: 20px;}
+nav ul{list-style-type:none;display:flex;justify-content:center;gap: 30px;}
+nav a{color:goldenrod;text-decoration:none;font-weight:bold;}
+.introduction{text-align:center;padding:80px 20px;}
+.introduction h1{color:goldenrod;font-size:48px;margin: bottom 10px;}
+.introduction p{color:white;font-size:20px;}
+.about{padding: 40px 20px;text-align:center;}
+.about h2{color:goldenrod;font: size 32px;margin-bottom: 20px;}
+  .about p{max-width: 700px;margin: 0 auto;color:white;font-size:18px;}
+.contact{padding: 40px 20px;text-align:center;}
+.contact h2{color:goldenrod;font-size:32px;margin-bottom:20px;}
+ .contact a{color:goldenrod;text-decoration:none;}
+ footer{background-color:black;padding:20px;text-align:center;color:white;border-top:1px solid goldenrod;}
+
+
+
+
+
+
+
+
+
+ @media (max-width: 600px){nav ul{flex-direction:column;gap:10px;}}
+.inroduction h1{font-size:36px;}
+  .introduction img{width: 120px;height: 120px;}
