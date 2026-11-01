@@ -1,27 +1,240 @@
-*{margin: 0;padding: 0;box-sizing:border-box}
-body{font-family:Arial, sans-serif;line-height:1.6;background-color:black;color:white;}
-nav{background-color:black;padding: 20px;}
-nav ul{list-style-type:none;display:flex;justify-content:center;gap: 30px;}
-nav a{color:goldenrod;text-decoration:none;font-weight:bold;}
-.introduction{text-align:center;padding:80px 20px;}
-.introduction h1{color:goldenrod;font-size:48px;margin: bottom 10px;}
-.introduction p{color:white;font-size:20px;}
-.about{padding: 40px 20px;text-align:center;}
-.about h2{color:goldenrod;font: size 32px;margin-bottom: 20px;}
-  .about p{max-width: 700px;margin: 0 auto;color:white;font-size:18px;}
-.contact{padding: 40px 20px;text-align:center;}
-.contact h2{color:goldenrod;font-size:32px;margin-bottom:20px;}
- .contact a{color:goldenrod;text-decoration:none;}
- footer{background-color:black;padding:20px;text-align:center;color:white;border-top:1px solid goldenrod;}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: black;
+  color: white;
+}
+:root{
+  --golden-color: goldenrod;
+  --black-color: black;
+  --dark: #151515;
+  --white-color: white;
+}
+/*header*/
+header{
+  background-color: #111111;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid goldenrod;
+}
+header h1{
+  color: goldenrod;
+  font-size: 28px;
+}
+nav{
+  display: flex;
+  gap: 25px;
+}
+nav a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover{
+  color: goldenrod;
+}
+section{
+  padding: 60px 10%;
+}
+section h2{
+  color: goldenrod;
+  font-size: 30px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+/* SKILLS */
+#skills .skill{
+background: #0c0c00;
+}
+#skills p {
+  margin : 15px 0 5px;
+}
+#skills container{
+  width: 100%;
+  background: #0c0c00;
+  height: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.skill-level{
+  height: 100%;
+  background: goldenrod;
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+.html{
+  width: 80%;
+}
+.css{
+  width: 75%;
+}
+.javascript{
+  width: 65%;
+}
+.github{
+  width: 70%;
+}
+.web-design{
+  width: 60%;
+}
+#projects {
+  background-color: #111111;
+}
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 25px;
+}
+.project-card {
+  background-color: #0c0c00;
+  padding: 25px;
+  border-radius: 10px;
+  border-bottom: 3px solid goldenrod;
+  transition: transform 0.3s ease-in-out;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+}
+.project-card h3 {
+  color: goldenrod;
+  margin-bottom: 15px;
+}
+.project-card p {
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+.project-card a {
+  color: goldenrod;
+  text-decoration: none;
+  font-weight: bold;
+}
+.project-card:hover{
+  text-decoration: underline;
+}
+#github projects {
+  background-color: #111111;
+  padding: 60px 10%;
+  text-align: center;
+  display: block;
+  color: white;
+}
+#github projects h2 {
+  color: goldenrod;
+}
+#github status {
+  margin : 20px 0;
+  color: goldenrod;
+}
+#githubRepolist {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  text-align: left;
+}
+#githubRepolist .project-card {
+  background-color: #0c0c00;
+  padding: 25px;
+  border-radius: 10px;
+  border-bottom: 3px solid goldenrod;
+}
+#services {
+  text-align: center;
+}
+#services p {
+  margin: 12px 0;
+  color: #cccccc;
+}
+#contact {
+  background-color: #111111;
+  text-align: center;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 550px;
+  gap: 15px;
+}
+#contact form label {
+  text-align: left;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #5555555;
+  border-radius: 5px;
+  background-color: #0c0c00;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: goldenrod;
+}
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+button {
+  background-color: goldenrod;
+  color: black;
+  border: 2px solid goldenrod;
+  padding: 13px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: transparent;
+  color: goldenrod;
+}
+#formMessage {
+  margin-top: 15px;
+  color: goldenrod;
+}
+footer {
+  background-color: #111111;
+  padding: 25px 8%;
+  text-align: center;
+  color: #cccccc;
+  border-top: 1px solid #333333;
+  color: #aaaaaa;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
 
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
 
-
-
-
-
-
-
-
- @media (max-width: 600px){nav ul{flex-direction:column;gap:10px;}}
-.inroduction h1{font-size:36px;}
-  .introduction img{width: 120px;height: 120px;}
+  section {
+    padding: 45px 6%;
+  }
+   .projects-container {
+    grid-template-columns: 1fr;
+  }
+  section h2 {
+    font-size: 25px;
+  }
+}
